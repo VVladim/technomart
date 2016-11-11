@@ -1,0 +1,174 @@
+ body {
+  min-width: 1200px;
+
+ font-weight: 400;
+ font-size: 14px;
+ line-height: 24px;
+ font-family: "Cuprum", "Arial", sans-serif;
+ color: #000000;
+
+ background: #626262;
+}
+.clearfix::after {
+   content: "";
+   display: table;
+   clear: both;
+
+}
+.header-top {
+   background: #293449;
+}
+.container {
+  position: relative;
+   width: 940px;
+   margin-left: auto;
+   margin-right: auto;
+   padding: 0 130px;
+}
+.index-logo {
+  position: absolute;
+  top: 0;
+  left: 130px;
+  padding: 11px 55px;
+   padding-bottom: 7px;
+   font-size: 24px;
+   line-height: 24px;
+   color: #ffffff;
+   text-transform: uppercase;
+   background: #ee3643;
+   border-bottom: 4px solid #b52933;
+}
+.header-top .search {
+
+  float: left;
+  width: 265px;
+  margin-left: 220px;
+}
+.header-top .search a{
+   position: relative;
+   display: block;
+   padding-left: 49px;
+   padding-top: 10px;
+   padding-bottom: 9px;
+   font-size: 17px;
+   color: #ffffff;
+   text-decoration: none;
+}
+.header-top .search a::before {
+  content: "";
+   position: absolute;
+   top: 12px;
+    left: 18px;
+   width: 17px;
+   height: 17px;
+   background: transparent url("../img/sprite.png");
+   background-position: -15px -244px;
+   opacity: 0.3;
+}
+.header-top .search a:hover::before {
+   opacity: 1;
+}
+.header-top .top-navigation {
+   float: right;
+}
+.header-top .top-navigation ul {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+}
+.top-navigation ul li {
+   display: inline-block;
+}
+.top-navigation li:last-child {
+}
+.top-navigation ul a {
+  position: relative;
+  display: block;
+  padding-left: 45px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 9px;
+  font-size: 17px;
+  color: #ffffff;
+  text-decoration: none;
+}
+.top-navigation ul .btn {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 9px;
+  background: #63a63e;
+}
+.bookmark::before {
+   content: "";
+   position: absolute;
+   top: 14px;
+    left: 19px;
+   width: 14px;
+   height: 16px;
+   background: transparent url("../img/sprite.png");
+   background-position: -15px -61px;
+   opacity: 0.3;
+}
+.bookmark:hover::before {
+   opacity: 1;
+}
+.basket::before {
+   content: "";
+   position: absolute;
+   top: 13px;
+    left: 12px;
+    width: 17px;
+    height: 16px;
+   background: transparent url("../img/sprite.png");
+   background-position: -15px -15px;
+   opacity: 0.3;
+}
+.basket:hover::before {
+   opacity: 1;
+}
+
+
+
+
+.sprite {
+    background-image: url("../img/sprite.png");
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite--icon-basket {
+    width: 17px;
+    height: 16px;
+    background-position: -15px -15px;
+}
+
+.sprite--icon-bookmark {
+    width: 14px;
+    height: 16px;
+    background-position: -15px -61px;
+}
+
+.sprite--icon-facebook-copy {
+    width: 10px;
+    height: 18px;
+    background-position: -15px -107px;
+}
+
+.sprite--icon-instagramm-copy {
+    width: 17px;
+    height: 17px;
+    background-position: -15px -155px;
+}
+
+.sprite--icon-vk-copy {
+    width: 20px;
+    height: 12px;
+    background-position: -15px -202px;
+}
+
+.sprite-icon-search {
+    width: 17px;
+    height: 17px;
+    background-position: -15px -244px;
+}
