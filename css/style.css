@@ -18,6 +18,12 @@
 .header-top {
    background: #293449;
 }
+.header-top:hover {
+   background: #212a3a;
+}
+.header-top:active {
+   background: #293449;
+}
 .container {
   position: relative;
    width: 940px;
@@ -38,27 +44,59 @@
    background: #ee3643;
    border-bottom: 4px solid #b52933;
 }
+.index-logo:hover {
+   background: #ca2c37;
+}
+.index-logo:active {
+   background: #ba2732;
+}
 .header-top .search {
-
+  position: relative;
   float: left;
   width: 265px;
   margin-left: 220px;
 }
 .header-top .search a{
-   position: relative;
+   position: absolute;
+   top: 0px;
+   left: 0px;
    display: block;
    padding-left: 49px;
    padding-top: 10px;
    padding-bottom: 9px;
    font-size: 17px;
    color: #ffffff;
+   background: #293449;
    text-decoration: none;
+   z-index: 2
 }
+.header-top input[type="search"] {
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   box-sizing: border-box;
+   width: 100%;
+   padding-left: 49px;
+   padding-right: 10px;
+   padding-top: 8px;
+   padding-bottom: 7px;
+   font-size: 17px;
+   background: transparent url("../img/.icon-search-red.png");
+   background-position: 20px 10px;
+   background-repeat: no-repeat;
+   background-color: #ffffff;
+   z-index: 1;
+}
+
+.header-top .search:active input[type="search"] {
+   z-index: 3;
+}
+
 .header-top .search a::before {
-  content: "";
+   content: "";
    position: absolute;
    top: 12px;
-    left: 18px;
+   left: 18px;
    width: 17px;
    height: 17px;
    background: transparent url("../img/sprite.png");
@@ -68,6 +106,10 @@
 .header-top .search a:hover::before {
    opacity: 1;
 }
+.header-top .search:active .search a {
+   display: none;
+}
+
 .header-top .top-navigation {
    float: right;
 }
@@ -110,8 +152,14 @@
    background-position: -15px -61px;
    opacity: 0.3;
 }
+.bookmark:active {
+   background: #161d29;
+}
 .bookmark:hover::before {
    opacity: 1;
+}
+.bookmark:active::before {
+   opacity: 0.5;
 }
 .basket::before {
    content: "";
@@ -126,6 +174,12 @@
 }
 .basket:hover::before {
    opacity: 1;
+}
+.basket:active::before {
+   opacity: 0.5;
+}
+.basket:active {
+   background: #161d29;
 }
 
 
