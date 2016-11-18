@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <title>Техномарт</title>
     <link href="css/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/fonts.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
   </head>
   <body>
@@ -74,32 +75,37 @@
 
     <main>
       <div class="wrapper">
-          <!-- <div class="catalog-item"></div>
-          <div class="slader-item"></div> -->
-          <div class="row clearfix">
-            <div class="col s-4">
-              <div class="catalog-item yellow">
-                <div class="title">Материалы</div>
-                <a href="" class="btn">На любой вкус</a>
-              </div>
-            </div>
-            <div class="col s-4">
-              <div class="catalog-item blue">
-                <div class="title">Инструмент</div>
-                <a href="" class="btn">На все случаи</a>
-              </div>
-            </div>
-            <div class="col s-4">
-              <div class="catalog-item lilac">
-                <div class="title">Техника</div>
-                <a href="" class="btn">Для стройки</a>
-              </div>
+        <div class="row clearfix">
+          <div class="col s-4">
+            <div class="catalog-item yellow">
+              <div class="title">Материалы</div>
+              <a href="" class="btn">На любой вкус</a>
             </div>
           </div>
-          <div class="row clearfix">
-            <div class="col s-8">
-              <div class="slider-item">
-                <div class="slide-name">
+          <div class="col s-4">
+            <div class="catalog-item blue">
+              <div class="title">Инструмент</div>
+              <a href="" class="btn">На все случаи</a>
+            </div>
+          </div>
+          <div class="col s-4">
+            <div class="catalog-item lilac">
+              <div class="title">Техника</div>
+              <a href="" class="btn">Для стройки</a>
+            </div>
+          </div>
+        </div>
+        <div class="row clearfix">
+          <div class="col s-8">
+            <div class="slider-item">
+              <input type="radio" id="btn-1" name="toggle" checked>
+              <input type="radio" id="btn-2" name="toggle">
+              <div class="slider-controls">
+                <label for="btn-1"></label>
+                <label for="btn-2"></label>
+              </div>
+              <div class="slide slide-1">
+                <div class="slide-text">
                   <div class="title">
                     Перфораторы
                   </div>
@@ -107,21 +113,106 @@
                     Настоящие мужские игрушки
                   </div>
                 </div>
-                <img src="img/worker.png" width="620" height="266" alt="Строитель">
+                <a href="" class="btn">
+                  Открыть каталог
+                </a>
+                <img src="img/worker.jpg" width="620" height="266" alt="Рабочий">
+                <div class="prev-button"></div>
+                <div class="next-button"></div>
               </div>
-            </div>
-            <div class="col s-4">
-              <div class="catalog-item green">
-                <div class="title">Скидка 50%</div>
-                <a href="" class="btn">на 350 товаров</a>
-              </div>
-              <div class="catalog-item bigcar">
-                <div class="title">Доставка</div>
-                <a href="" class="btn">Бесплатно</a>
+              <div class="slide slide-2">
+                <div class="slide-text">
+                  <div class="title">
+                    Дрели
+                  </div>
+                  <div class="tagline">
+                    Соседям на радость!
+                  </div>
+                </div>
+                <a href="" class="btn">
+                  Открыть каталог
+                </a>
+                <img src="img/builder.jpg" width="620" height="266" alt="Строитель">
+                <div class="prev-button"></div>
+                <div class="next-button"></div>
               </div>
             </div>
           </div>
+          <div class="col s-4">
+            <div class="catalog-item green">
+              <div class="title">Скидка 50%</div>
+              <a href="" class="btn">на 350 товаров</a>
+            </div>
+            <div class="catalog-item bigcar">
+              <div class="title">Доставка</div>
+              <a href="" class="btn">Бесплатно</a>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="wrapper-catalog">
+        <div class="row clearfix">
+          <div class="col s-3">
+            <div class="list-item">
+              <div class="actions">
+                <a href="" class="buy">Купить</a>
+                <a href="" class="bookmark">В закладки</a>
+              </div>
+              <div class="image">
+                <img src="img/BFG-9000.jpg" width="184" height="164" alt="Перфоратор">
+              </div>
+              <div class="title">Перфоратор BOSH BFG 9000</div>
+              <div class="discount">32500 Р.</div>
+              <div class="price">25500 Р.</div>
+            </div>
+          </div>
+          <div class="col s-3">
+            <div class="list-item">
+              <div class="actions">
+                <a href="" class="buy">Купить</a>
+                <a href="" class="bookmark">В закладки</a>
+              </div>
+              <div class="image">
+                <img src="img/BFG-3000.jpg" width="127" height="112" alt="Перфоратор">
+              </div>
+              <div class="title">Перфоратор BOSH BFG 3000</div>
+              <div class="discount">22500 Р.</div>
+              <div class="price">15500 Р.</div>
+            </div>
+          </div>
+          <div class="col s-3">
+            <div class="list-item">
+              <div class="actions">
+                <a href="" class="buy">Купить</a>
+                <a href="" class="bookmark">В закладки</a>
+              </div>
+              <div class="image">
+                <img src="img/BFG-6000.jpg" width="144" height="128" alt="Перфоратор">
+              </div>
+              <div class="title">Перфоратор BOSH BFG 6000</div>
+              <div class="discount">30500 Р.</div>
+              <div class="price">25500 Р.</div>
+            </div>
+          </div>
+          <div class="col s-3">
+            <div class="list-item">
+              <div class="flag flag-new">
+                New
+              </div>
+              <div class="actions">
+                <a href="" class="buy">Купить</a>
+                <a href="" class="bookmark">В закладки</a>
+              </div>
+              <div class="image">
+                <img src="img/BFG-2000.jpg" width="127" height="112" alt="Перфоратор">
+              </div>
+              <div class="title">Перфоратор BOSH BFG 2000</div>
+              <div class="discount">25500 Р.</div>
+              <div class="price">25500 Р.</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <footer>
 

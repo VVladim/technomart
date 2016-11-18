@@ -140,6 +140,12 @@
   padding-bottom: 9px;
   background: #63a63e;
 }
+.user-block ul .btn:hover {
+   background: #63a63e;
+}
+.user-block ul .btn:active {
+   background: #518534;
+}
 .bookmark::before {
    content: "";
    position: absolute;
@@ -319,16 +325,14 @@
    padding-top: 118px;
    margin-left: auto;
    margin-right: auto;
-   background: #f1f5f7;
+   background: #ffffff;
 }
-.row {
-  background: #ccc;
-}
+
 .col {
    float: left;
    min-height: 50px;
    padding: 0px 10px;
-   background: #999;
+   /*background: #999;*/
    box-sizing: border-box;
 }
 .catalog-item {
@@ -342,27 +346,151 @@
 
 }
 .slider-item {
-  display: block;
-  position: relative;
-   background: #fff;
-   max-height: 266px;
-   z-index: 1;
+   display: block;
+   position: relative;
+   height: 266px;
+   width: 620px;
 }
-.slide-name {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding-top: 20px;
-  background: rgba(0, 0, 0, 0.3);
-  z-index: -1;
+.slider-item input[type="radio"] {
+  display: none;
 }
-.slide-name .title {
+.slider-controls {
+   position: absolute;
+   bottom: 36px;
+   left: 50%;
+   margin-left: -22px;
+   width: 44px;
+   height: 10px;
+
+}
+.slider-controls label {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: 0 5px;
+
+  vertical-align: top;
+
+  background: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+#btn-1:checked ~ .slide-1 {
+  display: block;
+}
+
+#btn-2:checked ~ .slide-2 {
+  display: block;
+}
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"] {
+   background: #ee3643;
+}
+
+.slide {
+   display: none;
+}
+
+.slide-text {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   padding-top: 26px;
+   padding-left: 24px;
+}
+.slide-text .title {
    font-size: 36px;
    line-height: 30px;
    font-weight: 700;
+   text-transform: uppercase;
+   color: #ffffff;
+   margin-bottom: 5px;
 }
+.slide-text .tagline {
+   font-size: 21px;
+   line-height: 24px;
+   font-weight: 400;
+   color: #ffffff;
+}
+.slider-item .btn {
+   display: inline-block;
+   position: absolute;
+   bottom: 22px;
+   left: 23px;
+   padding: 10px 48px;
+   text-transform: uppercase;
+   text-decoration: none;
+   line-height: 18px;
+   color: #ffffff;
+   background-color: #ee3643;
+   border-radius: 3px;
+}
+.slider-item .btn:hover {
+   background-color: #ca2c37;
+}
+.slider-item .btn:active {
+   background-color: #ba2732;
+}
+.slider-item .prev-button {
+   position: absolute;
+   top: 114px;
+   left: 22px;
+   width: 25px;
+   height: 40px;
+}
+.slider-item .prev-button::before {
+   content: "";
+   position: absolute;
+   top: 9px;
+    width: 27px;
+   height: 3px;
+   transform: rotate(-45deg);
+   background: #ffffff;;
+}
+.slider-item .prev-button::after {
+   content: "";
+   position: absolute;
+   bottom: 10px;
+   width: 28px;
+   height: 3px;
+   transform: rotate(45deg);
+   background: #ffffff;;
+}
+
+
+.slider-item .next-button {
+   position: absolute;
+   top: 114px;
+   right: 22px;
+   width: 25px;
+   height: 40px;
+}
+.slider-item .next-button::before {
+   content: "";
+   position: absolute;
+   top: 9px;
+    width: 27px;
+   height: 3px;
+   transform: rotate(45deg);
+   background: #ffffff;;
+}
+.slider-item .next-button::after {
+   content: "";
+   position: absolute;
+   bottom: 10px;
+   width: 28px;
+   height: 3px;
+   transform: rotate(-45deg);
+   background: #ffffff;;
+}
+
+
+
+
+
+
 .catalog-item.yellow {
   position: relative;
    background: #f6b22d;
@@ -371,7 +499,7 @@
    content: "";
    position: absolute;
    top: 30px;
-    left: 214px;
+   left: 214px;
    width: 44px;
    height: 65px;
    background: transparent url("../img/backet.png")
@@ -423,9 +551,9 @@
 .catalog-item.bigcar::before {
    content: "";
    position: absolute;
-   top: 26px;
    top: 33px;
    left: 191px;
+   width: 78px;
    height: 63px;
    background: transparent url("../img/bigcar.png")
 }
@@ -469,6 +597,124 @@
 }
 .catalog-item .btn:active {
    background: rgba(0, 0, 0, 0.3);
+}
+
+
+.wrapper-catalog {
+   width: 960px;
+   padding: 10px 120px;
+   margin-left: auto;
+   margin-right: auto;
+   background: #ffffff;
+}
+.wrapper-catalog .row {
+   margin: 0 10px;
+}
+.wrapper-catalog .col {
+  padding: 0 20px 0 0;
+}
+.wrapper-catalog .col:last-child {
+  padding-right: 0px;
+}
+.list-item {
+  position: relative;
+   overflow: hidden;
+   margin-right: 20px;
+}
+.list-item:last-child {
+   margin-right: 0;
+}
+.flag-new {
+   position: absolute;
+   top: 6px;
+   right: -78px;
+   font-size: 15px;
+   font-weight: 700;
+   line-height: 14px;
+   width: 200px;
+   margin-left: -1px;
+   margin-right: -1px;
+   padding-top: 7px;
+   padding-bottom: 7px;
+   background: #ee3643;
+   text-transform: lowercase;
+   text-align: center;
+   color: #ffffff;
+   transform: rotate(45deg);
+
+}
+
+.list-item .actions {
+   display: none;
+}
+.list-item .image {
+   width: 220px;
+   height: 168px;
+   margin-bottom: 14px;
+}
+.wrapper-catalog .col:nth-child(1) img {
+  padding-top: 7px;
+  margin-left: 16px;
+}
+.wrapper-catalog .col:nth-child(2) img {
+   padding-left: 45px;
+   padding-top: 30px;
+}
+.wrapper-catalog .col:nth-child(3) img {
+   padding-left: 36px;
+   padding-top: 23px;
+}
+.wrapper-catalog .col:nth-child(4) img {
+  padding-left: 45px;
+   padding-top: 30px;
+}
+.list-item .title {
+   font-family: "PT Sans", "Arial", sans-serif;
+   font-size: 18px;
+   line-height: 20px;
+   font-weight: 700;
+   text-align: center;
+   width: 160px;
+   min-height: 40px;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 10px;
+}
+.discount {
+   font-family: "PT Sans", "Arial", sans-serif;
+   font-size: 17px;
+   line-height: 18px;
+   font-weight: 700;
+   color: #999999;
+   text-decoration: line-through;
+   width: 70px;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 10px;
+}
+.wrapper-catalog .col:nth-child(4) .discount {
+   color: #ffffff;
+}
+.wrapper-catalog .price {
+  position: relative;
+  display: inline-block;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+  margin-left: 42px;
+  padding: 10px 27px;
+  color: #ffffff;
+  background: #ee3643;
+}
+.wrapper-catalog .price::after {
+   content: "";
+   position: absolute;
+   right: -42px;
+   width: 0;
+   height: 0;
+   border: 38px solid #ee3643                                       ;
+   border-left-color: transparent;
 }
 
 
