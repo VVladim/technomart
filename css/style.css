@@ -787,16 +787,16 @@
    color: #ffffff;
 }
 .wrapper-catalog .price {
-  position: relative;
-  display: inline-block;
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 17px;
-  line-height: 18px;
-  font-weight: 700;
-  margin-left: 42px;;
-  padding: 10px 27px;
-  color: #ffffff;
-  background: #ee3643;
+    position: relative;
+    display: inline-block;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: 700;
+    margin-left: 42px;;
+    padding: 10px 27px;
+    color: #ffffff;
+    background: #ee3643;
 }
 .wrapper-catalog .price::after {
    content: "";
@@ -809,32 +809,51 @@
    border-left-color: #ee3643;
  }
  .popular {
-   position: relative;
+    position: relative;
     padding-top: 45px;
+    margin-bottom: 10px;
  }
  .container .title-block {
-   display: block;
-   margin-left: 25px;
-   margin-bottom: 40px;
+    display: block;
+    margin-left: 25px;
+    margin-bottom: 47px;
+ }
+ .manufacturer {
+    margin-bottom: 133px;
  }
  .company {
     float: left;
     margin-right: 20px;
     position: relative;
     width: 220px;
-    height: 163px;
+    height: 150px;
     text-align: center;
+    margin-bottom: 17px;
  }
  .company:nth-child(4n) {
     margin-right: 0;
  }
+ .company:hover {
+   box-shadow:
+    0 5px 4px 5px rgba(0, 0, 0, .5),
+    -5px 0 5px -5px rgba(0, 0, 0, .5),
+    5px 0 5px -5px rgba(0, 0, 0, .5),
+    0 0 5px rgba(0, 0, 0, .5);
+ }
+ .company:active {
+    box-shadow:
+    0 0px 4px 5px rgba(0, 0, 0, .5),
+    0px 0 5px -5px rgba(0, 0, 0, .5),
+    5px 0 5px -5px rgba(0, 0, 0, .5),
+    0 0 5px rgba(0, 0, 0, .5);
+ }
  .company img {
    position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   margin: auto;
  }
 .popular .all{
     display: inline-block;
@@ -858,8 +877,188 @@
  .popular .all:active {
     background-color: #ba2732;
  }
+ .service {
+   margin-bottom: 163px;
+}
+ .service .title-block {
+    margin-left: 0;
+    margin-bottom: 34px;
+ }
+ .service p {
+    width: 400px;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 70px;
+ }
+ .service-slider {
+    padding-top: 5px;
+ }
+ .service-slider input[type="radio"] {
+   display: none;
+ }
+ .list-slider {
+    position: relative;
+    float: left;
+    width: 240px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+ }
+ .list-slider::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 10px;
+    height: 180px;
+ }
+ .list-slider li {
+   margin: 0;
+   padding: 0;
 
-
+ }
+ .list-slider label {
+    display: block;
+    background: #32425c;
+    font-size: 21px;
+    font-weight: 700;
+    padding-top: 13px;
+    padding-bottom: 21px;
+    padding-left: 22px;
+    color: #d6d9de;
+    border-top: 1px solid #405069;
+    border-bottom: 1px solid #293449;
+    cursor: pointer;
+ }
+ .list-slider .key:hover {
+    background: #293449;
+ }
+ .list-slider .active {
+    color: #32425c;
+    background: #ffffff;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    cursor: default;
+ }
+ .list-slider .active:hover {
+   color: #32425c;
+   background: #ffffff;
+   border-top: 1px solid #ffffff;
+   border-bottom: 1px solid #ffffff;
+ }
+ .delivery {
+    background-image: url("../img/delivery-car.jpg");
+    background-repeat: no-repeat;
+    background-position: 100% 17px;
+ }
+ .guarantee {
+   background-image: url("../img/guarantee.jpg");
+   background-repeat: no-repeat;
+   background-position: 100% 5px;
+ }
+ .credit {
+   background-image: url("../img/credit.jpg");
+   background-repeat: no-repeat;
+   background-position: 100% -10px;
+ }
+ .service-slide-text p {
+    margin-bottom: 25px;
+ }
+ .service-slide {
+   margin-left: 280px;
+   display: none;
+   padding-top: 5px;
+   padding-left: 40px;
+   min-height: 190px;
+ }
+ .service-slide-text .title-block{
+   font-size: 34px;
+ }
+ .service-slide .submit {
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 10px 50px;
+    background: #ee3643;
+    border-radius: 3px;
+    border: 0;
+ }
+ #key-1:checked ~ .delivery {
+   display: block;
+ }
+ #key-2:checked ~ .guarantee {
+   display: block;
+ }
+ #key-3:checked ~ .credit {
+   display: block;
+ }
+ #key-1:checked ~ .list-slider label[for="key-1"],
+ #key-2:checked ~ .list-slider label[for="key-2"],
+ #key-3:checked ~ .list-slider label[for="key-3"] {
+    color: #32425c;
+    background: #ffffff;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    cursor: default;
+ }
+ .about-company .text {
+    float: left;
+ }
+ .about-company .title-block {
+    margin-left: 0;
+    margin-bottom: 34px;
+ }
+ .about-company .text p {
+    line-height: 22px;
+    margin-bottom: 25px;
+ }
+ .about-company .text ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 35px;
+ }
+ .about-company .text li {
+    position: relative;
+    padding-left: 36px;
+    font-size: 18px;
+    margin-bottom: 14px;
+ }
+ .about-company li::before {
+   content: "";
+   position: absolute;
+   top: 10px;
+   left: 0;
+   width:20px;
+   height: 2px;
+   background: #fb565a;
+ }
+ .about-company .text .btn {
+    display: inline-block;
+    padding: 8px 41px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: #ee3643;
+    border-radius: 3px;
+ }
+ .map-contacts {
+   width: 300px;
+    float: right;
+ }
+ .map-contacts img {
+    margin-bottom: 45px;
+ }
+ .map-contacts .call {
+    display: inline-block;
+    width: 300px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    border-radius: 3px;
+    background: #ee3643;
+ }
 
 
 
