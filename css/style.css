@@ -1,6 +1,8 @@
+ html {
+    margin: 0;
+ }
  body {
   min-width: 1200px;
-
  font-weight: 400;
  font-size: 14px;
  line-height: 24px;
@@ -319,6 +321,10 @@
 .header-nav li:last-child a {
    padding-right: 54px;
 }
+/*main {
+   padding-bottom: 20px;
+   background: #ffffff;
+}*/
 .wrapper {
    width: 960px;
    padding: 10px 120px;
@@ -327,7 +333,6 @@
    margin-right: auto;
    background: #ffffff;
 }
-
 .col {
    float: left;
    min-height: 50px;
@@ -738,6 +743,13 @@
   border: 3px solid #63a63e;
   border-radius: 3px;
 }
+.actions .bookmark:hover {
+   border: 3px solid #32425c;
+}
+.actions .bookmark:active {
+   border: 3px solid #c1c6ce;
+   color: #f7f8f9;
+}
 .list-item .image {
    width: 220px;
    height: 168px;
@@ -811,7 +823,7 @@
  .popular {
     position: relative;
     padding-top: 45px;
-    margin-bottom: 10px;
+    padding-bottom: 85px;
  }
  .container .title-block {
     display: block;
@@ -904,13 +916,6 @@
     padding: 0;
     list-style: none;
  }
- .list-slider::before {
-    content: "";
-    position: absolute;
-    right: 0;
-    width: 10px;
-    height: 180px;
- }
  .list-slider li {
    margin: 0;
    padding: 0;
@@ -925,25 +930,13 @@
     padding-bottom: 21px;
     padding-left: 22px;
     color: #d6d9de;
+    border-right: 4px solid rgba(39, 51, 71, 0.6);
     border-top: 1px solid #405069;
     border-bottom: 1px solid #293449;
     cursor: pointer;
  }
  .list-slider .key:hover {
     background: #293449;
- }
- .list-slider .active {
-    color: #32425c;
-    background: #ffffff;
-    border-top: 1px solid #ffffff;
-    border-bottom: 1px solid #ffffff;
-    cursor: default;
- }
- .list-slider .active:hover {
-   color: #32425c;
-   background: #ffffff;
-   border-top: 1px solid #ffffff;
-   border-bottom: 1px solid #ffffff;
  }
  .delivery {
     background-image: url("../img/delivery-car.jpg");
@@ -995,6 +988,7 @@
  #key-3:checked ~ .list-slider label[for="key-3"] {
     color: #32425c;
     background: #ffffff;
+    border-right: 4px solid rgba(219, 219, 219, 0.9);
     border-top: 1px solid #ffffff;
     border-bottom: 1px solid #ffffff;
     cursor: default;
@@ -1040,6 +1034,12 @@
     background: #ee3643;
     border-radius: 3px;
  }
+ .about-company .text .btn:hover {
+    background: #ca2c37;
+ }
+ .about-company .text .btn:active {
+    background: #ba2732;
+ }
  .map-contacts {
    width: 300px;
     float: right;
@@ -1058,6 +1058,12 @@
     color: #ffffff;
     border-radius: 3px;
     background: #ee3643;
+ }
+ .map-contacts .call:hover {
+    background: #ca2c37;
+ }
+ .map-contacts .call:active {
+    background: #ba2732;
  }
 
 
@@ -1102,4 +1108,87 @@
     width: 17px;
     height: 17px;
     background-position: -15px -244px;
+}
+.footer-top {
+    width: 100%;
+    background: #32425c;
+}
+.footer-top .container {
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 130px;
+  background: transparent;
+}
+.footer-logo {
+  float: left;
+  margin-right: 30px;
+}
+.footer-logo .logo {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 400;
+    padding: 20px 40px;
+    margin-top: 0;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: #ee3643;
+    border-bottom: 8px solid #b52933;
+}
+.footer-logo p {
+    width: 325px;
+    font-size: 18px;
+    line-height: 24px;
+    color: #ffffff;
+    margin-top: 0;
+    margin-left: 3px;
+}
+.footer-nav {
+   float: left;
+}
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+footer ul li {
+   display: inline-block;
+   margin: 0;
+   margin-left: -3px;
+   padding: 0;
+
+}
+footer ul a {
+    display: block;
+    text-decoration: none;
+    font-size: 18px;
+    color: #ffffff;
+}
+footer .nav-top {
+   margin-top: 28px;
+   margin-bottom: 25px;
+}
+footer .nav-top a {
+  padding: 10px 30px;
+}
+footer ul a:hover {
+  text-decoration: underline;
+}
+footer ul a:active {
+  opacity: 0.5;
+  text-decoration: none;
+}
+.nav-top li:last-child a {
+   padding-right: 0;
+}
+footer .nav-bottom {
+   margin-left: 27px;
+}
+footer .nav-bottom a {
+  padding: 10px 30px;
+  color: #d6b479;
+
+}
+.nav-bottom li:last-child a {
+   padding-right: 0;
 }
