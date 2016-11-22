@@ -1119,6 +1119,7 @@
   margin-right: auto;
   padding: 0 130px;
   background: transparent;
+  padding-bottom: 35px;
 }
 .footer-logo {
   float: left;
@@ -1166,7 +1167,7 @@ footer ul a {
 }
 footer .nav-top {
    margin-top: 28px;
-   margin-bottom: 25px;
+   margin-bottom: 14px;
 }
 footer .nav-top a {
   padding: 10px 30px;
@@ -1191,4 +1192,88 @@ footer .nav-bottom a {
 }
 .nav-bottom li:last-child a {
    padding-right: 0;
+}
+.footer-bottom {
+   width: 100%;
+   background: #293449;
+}
+.footer-bottom .container {
+   background: transparent;
+   padding-top: 5px;
+   padding-bottom: 17px;
+}
+.footer-copyright {
+  float: left;
+   width: 235px;
+   font-size: 16px;
+   line-height: 18px;
+   color: #ffffff;
+   margin-top: 37px;
+   margin-right: 150px;
+}
+.footer-social {
+  float: left;
+   width: 235px;
+   margin-top: 30px;
+}
+.footer-social .social-btn {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 0 2px;
+    font-size: 0;
+    vertical-align: top;
+    text-decoration: none;
+    border-radius: 50%;
+    /*transition: background-position 0.5s,
+    background-color 0.5s;*/
+    background: #212a3a url(../img/sprite.png) no-repeat center;
+}
+.footer-social .btn-vk {
+    background-position: -6px -188px;
+}
+.footer-social .btn-f {
+    background-position: -1px -96px;
+}
+.footer-social .btn-tw {
+    background-position: -4px -143px;
+}
+.social-btn:hover {
+   background-color: #ee3643;
+}
+.footer-contacts {
+   float: right;
+   margin-top: 13px;
+
+}
+.footer-contacts a {
+   color: #ffffff;
+   text-decoration: none;
+}
+.footer-contacts a:hover {
+   color: #f1c77c;
+   text-decoration:underline;
+}
+.footer-contacts a:active {
+   color: #ee3643;
+   text-decoration: none;
+}
+.footer-contacts p:active {
+   color: #f1f1f3;
+}
+.call-back,
+.developer {
+   display: inline-block;
+   vertical-align: top;
+   color: #ffffff;
+   font-size: 16px;
+   line-height: 20px;
+}
+.call-back p {
+   width: 140px;
+   margin-right: 44px;
+}
+.developer p {
+   width: 100px;
+   margin-right: 13px;
 }
