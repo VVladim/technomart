@@ -1301,9 +1301,128 @@ footer .nav-bottom a {
 }
 .header-enter .account {
    float: left;
+   padding-top: 34px;
 }
- .account p {
-  padding-top: 23px;
-  margin-left: 34px;
+ .account .user-name {
+   display: block;
+   position: relative;
+  padding: 10px 65px;
+  padding-left: 34px;
    font-size: 21px;
+   text-decoration: none;
+   color: #222222;
+   margin-bottom: 5px;
+}
+.header-enter .account .user-name::before {
+  content: "";
+  width: 20px;
+  height: 18px;
+  position: absolute;
+  left: 2px;
+  bottom: 12px;
+   background-image: url("../img/.icon-user.png");
+   opacity: 0.5;
+}
+.account .user-name::after {
+  content: "";
+  width: 20px;
+  height: 18px;
+  position: absolute;
+  right: 0px;
+  bottom: 8px;
+   background-image: url("../img/.icon-login.png");
+   opacity: 0.5;
+}
+.account .user-name:hover {
+   color: #222222;
+}
+.account .user-name:hover::before,
+.account .user-name:hover::after {
+   opacity: 1;
+}
+.account .user-name:active {
+   color: #c7c7c7;
+}
+.account .user-name:active::before,
+.account .user-name:active::after {
+   opacity: 0.3;
+}
+.account .orders,
+.account .cabinet {
+   font-size: 16px;
+   color: #222222;
+}
+.account .orders {
+  position: relative;
+   margin-left: 6px;
+   margin-right: 28px;
+}
+.account .orders::after {
+   content: "";
+   position: absolute;
+   top: 9px;
+    right: -19px;
+   width: 4px;
+   height: 4px;
+   border-radius: 50%;
+   background: #222222;
+}
+.page-2 main .container {
+   padding-top: 65px;
+}
+.breadcrambs {
+   list-style: none;
+   margin: 0;
+   margin-bottom: 35px;
+   padding: 0;
+}
+.breadcrambs li{
+  display: inline-block;
+   margin: 0;
+   padding: 0;
+}
+.breadcrambs li a {
+  position: relative;
+  display: block;
+  font-family: "PT Sans", "Arial", sans-serif;;
+  font-size: 13px;
+  line-height: 18px;
+  padding: 15px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.breadcrambs li:first-child a {
+   width: 15px;
+   height: 12px;
+   padding: 2px 20px;
+   padding-left: 0;
+   font-size: 0;
+   background-image: url("../img/.icon-home.png");
+   background-repeat: no-repeat;
+}
+.battle-drill h1 {
+   margin-left: 28px;
+   font-size: 30px;
+   line-height: 30px;
+   font-weight: 400;
+   text-transform: uppercase;
+   color: #32425c;
+   margin-bottom: 43px;
+}
+
+.sidebar {
+   float: left;
+}
+.sidebar h3 {
+  font-family: "PT Sans";
+   font-size: 13px;
+   text-transform: uppercase;
+   margin-left: 20px;
+   margin-bottom: 21px;
+}
+.range-filter .title {
+   font-family: "PT Sans";
+   font-size: 17px;
+   font-weight: 700;
+   text-transform: uppercase;
 }

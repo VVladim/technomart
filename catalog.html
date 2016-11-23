@@ -6,7 +6,6 @@
     <title>Каталог-Техномарт</title>
     <link href="css/style.css" rel="stylesheet">
     <link href="css/fonts.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
   </head>
   <body class="page-2">
@@ -55,9 +54,9 @@
             </p>
           </section>
           <section class="account">
-            <p>Равшан Джамшутович</p>
+            <a href="#" class="user-name">Равшан Джамшутович</a>
             <a href="#" class="orders">Мои заказы</a>
-            <a href="own-cabinet">Личный кабинет</a>
+            <a href="#" class="cabinet">Личный кабинет</a>
           </section>
         </div>
         <nav class="header-nav clearfix">
@@ -73,4 +72,112 @@
         </nav>
       </div>
     </header>
+    <main>
+      <div class="container">
+        <ul class="breadcrambs">
+          <li><a href="index.html">домой</a></li>
+          <li><a href="#">Каталог</a></li>
+          <li><a href="#">Инструмент</a></li>
+          <li><a>Перфораторы</a></li>
+        </ul>
+        <section class="battle-drill clearfix">
+          <h1>Перфораторы</h1>
+
+
+
+
+
+          <div class="sidebar">
+            <h3>Фильтр</h3>
+              <form action="form.php" method="GET">
+                <div class="range-filter">
+                  <div class="title">
+                    Цена:
+                  </div>
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div style="width: 70%;" class="bar"></div>
+                    </div>
+                    <div class="toggle toggle-min"></div>
+                    <div class="toggle toggle-max"></div>
+                  </div>
+                  <div class="price-controls">
+                    <label class="min-price">
+                      от
+                      <input name="min-price" type="text" value="0">
+                    </label>
+                    <label class="max-price">
+                      до
+                      <input name="max-price" type="text" value="15000">
+                    </label>
+                  </div>
+                </div>
+                <fieldset>
+                  <legend>Производители:</legend>
+                  <ul class="feature-items">
+                    <li>
+                      <label class="fieldset-checkbox">
+                        <input type="checkbox" name="bosch" value="bosch" checked>
+                        <span class="checkbox-indication"></span>
+                        Bosch
+                      </label>
+                    </li>
+                    <li>
+                      <label class="fieldset-checkbox">
+                        <input type="checkbox" name="intersc" value="intersc">
+                        <span class="checkbox-indication"></span>
+                        Интерскол
+                      </label>
+                    </li>
+                    <li>
+                      <label class="fieldset-checkbox">
+                        <input type="checkbox" name="makita" value="makita"  checked>
+                        <span class="checkbox-indication"></span>
+                        Makita
+                      </label>
+                    </li>
+                    <li>
+                      <label class="fieldset-checkbox">
+                        <input type="checkbox" name="dewalt" value="dewalt">
+                        <span class="checkbox-indication"></span>
+                        Dewalt
+                      </label>
+                    </li>
+                    <li>
+                      <label class="fieldset-checkbox">
+                        <input type="checkbox" name="hitachi" value="hitachi">
+                        <span class="checkbox-indication"></span>
+                        Hitachi
+                      </label>
+                    </li>
+                  </ul>
+                </fieldset>
+                <fieldset>
+                  <legend>Питание:</legend>
+                  <ul class="power-type">
+                    <li>
+                      <label class="fieldset-radio">
+                        <input type="radio" name="power" value="battery" checked>
+                        <span class="radio-indication"></span>
+                        Аккумуляторные
+                      </label>
+                    </li>
+                    <li>
+                      <label class="fieldset-radio">
+                        <input type="radio" name="power" value="circuit">
+                        <span class="radio-indication"></span>
+                        Сетевые
+                      </label>
+                    </li>
+                  </ul>
+                </fieldset>
+                <a href="#" class="btn">
+                  Показать
+                </a>
+              </form>
+            </div>
+
+        </section>
+      </div>
+    </main>
   </body>
