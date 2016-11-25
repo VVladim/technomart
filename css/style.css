@@ -10,12 +10,10 @@
  color: #000000;
  background: #626262;
 }
-/**/
 .clearfix::after {
    content: "";
    display: table;
    clear: both;
-
 }
 .header-top {
    background: #293449;
@@ -1369,6 +1367,7 @@ footer .nav-bottom a {
 }
 .page-2 main .container {
    padding-top: 65px;
+   padding-bottom: 50px;
 }
 .breadcrambs {
    list-style: none;
@@ -1575,7 +1574,7 @@ form .btn {
    background: #ccc;
 }
 .item-content {
-    margin-left: 220px;
+    margin-left: 210px;
     min-height: 1050px;
 }
 .item-content .selection {
@@ -1644,25 +1643,26 @@ form .btn {
    border: 0;
 }
 .item-content .list-item {
-   width: 210px;
+   width: 217px;
    float: left;
-   margin-right: 20px;
-   margin-bottom: 7px;
+   margin-right: 23px;
+   margin-bottom: 21px;
 }
 .item-content .list-item:nth-child(3n) {
    margin-right: 0;
 }
 .calery-content {
-   margin-left: 40px;
+   margin-left: 32px;
    margin-bottom: 45px;
 }
 .calery-content .image {
    margin-top: 42px;
-   margin-left: 28px;
+   margin-left: 38px;
    margin-bottom: -15px;
 }
 .paginator {
   margin-left: 30px;
+  margin-bottom: 63px;
 }
 .paginator a {
   display: inline-block;
@@ -1676,7 +1676,7 @@ form .btn {
    background: #ffffff;
    border-radius: 5px;
    margin-right: 5px;
-   border: 1px solid #ffffff;
+   border: 1px solid transparent;
 }
 .paginator a:nth-child(3) {
    margin-right: 20px;
@@ -1691,4 +1691,12 @@ form .btn {
    background: #ee3643;
    border: 1px solid #ee3643;
    color: #ffffff;
+}
+.two-words h2 {
+  font-size: 30px;
+   text-transform: uppercase;
+   margin-bottom: 33px;
+}
+.two-words p {
+  font-size: 15px;
 }
